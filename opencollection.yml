@@ -1,0 +1,29 @@
+opencollection: 1.0.0
+
+info:
+  name: express
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc2MDk2ODY2fQ.ZVgjoYQBGchTHpJQDQ2wbDWwk8gDUMXJKWPPeSXstwg
+  variables:
+    - name: x
+      value: https://curly-tribble-pjwrvp6xp7qgc46x-1367.app.github.dev/api
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

@@ -1,0 +1,19 @@
+info:
+  name: deletereviewsid
+  type: http
+  seq: 11
+
+http:
+  method: DELETE
+  url: "{{x}}/reviews/:id"
+  params:
+    - name: id
+      value: ""
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

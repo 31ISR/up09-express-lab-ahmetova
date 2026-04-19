@@ -1,0 +1,26 @@
+info:
+  name: postreviews
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{x}}/books/:id/reviews"
+  params:
+    - name: id
+      value: "5"
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "rating": 3,
+        "comment": "Читать можно"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

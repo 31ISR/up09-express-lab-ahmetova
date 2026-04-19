@@ -1,0 +1,22 @@
+info:
+  name: deleteusers
+  type: http
+  seq: 13
+
+http:
+  method: DELETE
+  url: "{{x}}/admin/users/:id"
+  params:
+    - name: ""
+      value: ""
+      type: query
+    - name: id
+      value: "3"
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,25 @@
+info:
+  name: postbooks
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{x}}/books"
+  body:
+    type: json
+    data: |-
+      {
+          "title": "Мёртвые души",
+          "author": "Николай Гоголь",
+          "year": 1842,
+          "genre": "Поэма",
+          "description": "Похождения Чичикова, скупающего мёртвые души крестьян."
+        }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

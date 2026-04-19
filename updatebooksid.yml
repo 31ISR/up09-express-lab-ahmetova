@@ -1,0 +1,25 @@
+info:
+  name: updatebooksid
+  type: http
+  seq: 7
+
+http:
+  method: PUT
+  url: "{{x}}/books/:id"
+  params:
+    - name: id
+      value: ""
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "title": "иывкауиуви"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
